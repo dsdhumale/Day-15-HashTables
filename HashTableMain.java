@@ -2,9 +2,9 @@ package com.Bridgelabz.HashTable;
 
 public class HashTableMain {
 	public static void main(String[] args) {
-		System.out.println("Wwlcome in Hash Tables program");
+		System.out.println("Welcome in Hash Tables program");
 		HashTableImp1<String, Integer> hashImpl = new HashTableImp1();
-		String message = "To be or not to be";
+		String message = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
 		String[] messageArray = message.toLowerCase().split(" ");
 
 		for (String word : messageArray) {
