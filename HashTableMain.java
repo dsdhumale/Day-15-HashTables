@@ -1,10 +1,15 @@
 package com.Bridgelabz.HashTable;
 
+import java.util.Hashtable;
+
 public class HashTableMain {
+	
 	public static void main(String[] args) {
 		System.out.println("Welcome in Hash Tables program");
 		HashTableImp1<String, Integer> hashImpl = new HashTableImp1();
 		String message = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+		Hashtable<String, Integer> hashtable = new Hashtable<>();
+		message = message.replace("avoidable", "");
 		String[] messageArray = message.toLowerCase().split(" ");
 
 		for (String word : messageArray) {
@@ -16,6 +21,6 @@ public class HashTableMain {
 			hashImpl.add(word, value);
 
 		}
-		System.out.println(hashImpl);
+			System.out.println(hashImpl);
 	}
 }
